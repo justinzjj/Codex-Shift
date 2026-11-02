@@ -1,9 +1,32 @@
+# macOS metadata
 .DS_Store
+._*
+.AppleDouble
+
+# Swift / Xcode build outputs and per-user settings
 .build/
 DerivedData/
 *.xcuserstate
 xcuserdata/
+*.xcuserdatad/
+*.dSYM/
+*.ipa
+
+# Local secrets and signing material
 .env
 .env.*
 !.env.example
+*.p12
+*.p8
+*.mobileprovision
+*.provisionprofile
+
+# Private evidence, device backups, and raw logs
 artifacts/local/
+
+# Python verification scripts
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
